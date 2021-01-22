@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(110, 10, 105) ;
+    position: relative;
+}
+
+.container {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: auto;
+}
+
+.ranking_lists {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+    cursor: grab;
+}
+
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    color: yellow;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.list {
+    max-width: 220px;
+    height: 450px;
+    background-color: rgba(252, 252, 252, 0.2);
+    padding: 20px 15px ;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.list:hover {
+    background-color: rgb(49, 2, 43);
+}
+
+.rank_position {
+    position: relative;
+    font-size: 40px;
+    padding: 10px;
+    color: rgb(113, 243, 62);
+    width: 15px;
+}
+
+.rank_position::before {
+    content: '';
+    position: absolute;
+    right: -12px;
+    bottom: 10px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+.song_label {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.artist {
+    color: rgb(232, 235, 238);
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.action_button button {
+    background-color: transparent;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.download i {
+    color: rgb(171, 171, 236);
+} 
+
+.like i {
+    color: red;
+}
+
+.share i {
+    color: rgb(240, 240, 240);
+} 
+
+.more i {
+    color: rgb(100, 241, 57);
+} 
+
+i {
+    padding: 10px;
+}
+
+i:hover {
+    transform: scale(0.5);
+}
+
+.swiper-button-next,.swiper-button-prev {
+    color: white;
+    outline: none;
+}
